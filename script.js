@@ -116,9 +116,9 @@ function initSimulator() {
   const btnSendWpp = document.getElementById('btn-send-sim-evo');
 
   let state = {
-    perfil: 'Mulheres Iniciantes / Recomeço',
-    programa: 'Programa Mulher em Movimento (Treino Leve & Adaptado)',
-    meta: 'Ganhar Força, Autonomia & Disposição',
+    perfil: 'Musculação & Ganho de Força',
+    programa: 'Musculação Acompanhada (Hipertrofia & Definição)',
+    meta: 'Ganho de Massa Muscular e Definição',
     freq: '3 vezes por semana (Ideal e Sustentável)',
     horario: 'Meio da Manhã (09:00 às 11:30)',
     nome: ''
@@ -137,17 +137,17 @@ function initSimulator() {
     if (btnSendWpp) {
       const alunoText = state.nome.trim() ? `Meu nome é *${state.nome.trim()}*.` : 'Gostaria de me apresentar.';
       const msg = 
-`Olá, equipe EVO Fitness Center! 🌿
-Vim pelo site e fiz a simulação do meu treino ideal:
+`🏋️‍♂️ *Olá, equipe EVO Fitness Center!*
+Vim pelo site e fiz a simulação do meu treino:
 
-👤 *Aluno(a):* ${state.nome.trim() || 'Não informado'}
-🎯 *Perfil:* ${state.perfil}
-🏆 *Programa Recomendado:* ${state.programa}
-✨ *Objetivo Principal:* ${state.meta}
-📅 *Frequência Preferida:* ${state.freq}
+👤 *Aluno(a):* ${state.nome.trim() || 'A informar'}
+🎯 *Foco:* ${state.perfil}
+🏆 *Treino Sugerido:* ${state.programa}
+🔥 *Meta Principal:* ${state.meta}
+📅 *Frequência:* ${state.freq}
 ⏰ *Melhor Horário:* ${state.horario}
 
-${alunoText} Gostaria de agendar a minha *Aula Experimental Gratuita* com professor na unidade da Rua Antônio Dib Mussi! Como podemos combinar o dia?`;
+${alunoText} Gostaria de agendar o meu *Treino Experimental Gratuito* com professor na unidade da Rua Antônio Dib Mussi! Como podemos combinar o melhor horário?`;
 
       btnSendWpp.href = `https://wa.me/5548988690851?text=${encodeURIComponent(msg)}`;
     }

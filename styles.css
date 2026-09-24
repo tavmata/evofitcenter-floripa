@@ -1,7 +1,7 @@
 /* ==========================================================================
    EVO Fitness Center - Stylesheet
-   Inspiration: Crossfit Attack (Grid structure) + Body by Megan (Warmth & Inclusivity)
-   Audience: Mulheres & Pessoas Idosas (60+ Longevidade Ativa)
+   Posicionamento: Resultados Reais | Treinos para todas as idades (inclusive 60+)
+   Modalidades: Condicionamento Físico | Musculação | Funcional
    Palette: Terracotta/Coral (#e06d53, #f43f5e), Sage/Emerald (#10b981), Linen/Cream (#fcfaf6)
    ========================================================================== */
 
@@ -796,6 +796,18 @@ button {
 
 .rose-badge {
   background: var(--rose-accent);
+}
+
+.coral-badge {
+  background: var(--coral-primary);
+}
+
+.amber-badge {
+  background: var(--amber-primary);
+}
+
+.navy-badge {
+  background: var(--navy-deep);
 }
 
 .program-body {
